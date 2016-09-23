@@ -16,7 +16,7 @@ function main(){
     setBed();
     setBath();
     setCar();
-    math();
+    total();
     printResult();
 }
 
@@ -38,7 +38,7 @@ function setCar() {
     numCar = Number(PROMPT.question(`\nPlease enter the amount of cars in the garage: `));
 }
 
-function math(){
+function total(){
     total = (numBed * BEDROOM) + (numBath * BATHROOM) + (numCar * CAR) + BASE_PRICE;
 }
 
