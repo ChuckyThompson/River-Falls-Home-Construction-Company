@@ -1,7 +1,7 @@
 /**
 *   @author Thompson, Charles (Coti5432@gmail.com)
-*   @version 0.0.1
-*   @summary Find total salary
+*   @version 0.0.3
+*   @summary Find total amount it should cost for a home
 *   @todo
 */
 
@@ -16,7 +16,7 @@ function main(){
     setBed();
     setBath();
     setCar();
-    total();
+    setTotal();
     printResult();
 }
 
@@ -38,7 +38,7 @@ function setCar() {
     numCar = Number(PROMPT.question(`\nPlease enter the amount of cars in the garage: `));
 }
 
-function total(){
+function setTotal(){
     total = (numBed * BEDROOM) + (numBath * BATHROOM) + (numCar * CAR) + BASE_PRICE;
 }
 
